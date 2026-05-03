@@ -1,5 +1,5 @@
 blueprint:
-  name: Daily File Downloader
+  name: Schedule File Download
   description: >
     Downloads a file every day at a specified time using the Downloader integration.
 
