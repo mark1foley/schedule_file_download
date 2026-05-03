@@ -1,0 +1,64 @@
+blueprint:
+  name: Daily File Downloader
+  description: >
+    Downloads a file every day at a specified time using the Downloader integration.
+
+    **Prerequisites:** The [Downloader integration](https://www.home-assistant.io/integrations/downloader/)
+    must be installed and configured in Home Assistant before using this blueprint.
+
+    [![Add Downloader Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=downloader)
+
+    To set it up manually, add the following to your `configuration.yaml` and restart Home Assistant:
+
+    ```yaml
+    downloader:
+      download_dir: /config/downloads
+    ```
+
+    If the Downloader integration is not configured, this automation will fail
+    with a service error — check the automation trace for details.
+
+  domain: automation
+  input:
+    trigger_time:
+      name: Time to run
+      description: The time each day when the file download will be triggered.
+      selector:
+        time: {}
+
+    download_url:
+      name: Download URL
+      description: The full URL of the file to download (e.g. https://example.com/file.zip).
+      selector:
+        text:
+          type: url
+
+    download_subdir:
+      name: Subdirectory
+      description: >
+        The subdirectory (relative to the Downloader integration's configured
+        download directory) where the file will be saved. Leave blank to save
+        directly in the root download directory.
+      default: ""
+      selector:
+        text: {}
+
+    download_filename:
+      name: Filename
+      description: The filename to save the downloaded file as (e.g. myfile.zip).
+      selector:
+        text: {}
+
+trigger:
+  - platform: time
+    at: !input trigger_time
+
+action:
+  - action: downloader.download_file
+    data:
+      url: !input download_url
+      subdir: !input download_subdir
+      filename: !input download_filename
+      overwrite: true
+
+mode: single
