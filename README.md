@@ -2,7 +2,7 @@
 
 [![Open your Home Assistant instance and show the blueprint import dialog with this blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?url=https://github.com/mark1foley/schedule_file_download/schedule_download.yaml)
 
-A simple but powerful Home Assistant blueprint that automatically downloads a file from a URL every day at a time you choose — using the built-in [Downloader integration](https://www.home-assistant.io/integrations/downloader/).
+A simple but powerful Home Assistant blueprint that automatically downloads a file from a URL every day at a time you choose — using the core [Downloader integration](https://www.home-assistant.io/integrations/downloader/).
 
 ---
 
