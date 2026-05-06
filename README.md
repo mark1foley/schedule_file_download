@@ -34,7 +34,7 @@ During setup you'll be prompted to choose a download directory. This will be the
 
 Click the button below to import the blueprint directly into your Home Assistant instance:
 
-[![Import Blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?url=https://github.com/mark1foley/schedule_file_download/schedule_download.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fmark1foley%2Fschedule_file_download%2Fblob%2Fmain%2Fscheduled_download.yaml)
 
 ### Option 2 — Manual installation
 
