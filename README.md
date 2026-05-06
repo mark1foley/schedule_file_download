@@ -1,6 +1,6 @@
 # 📥 Daily File Downloader — Home Assistant Blueprint
 
-[![Open your Home Assistant instance and show the blueprint import dialog with this blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?url=https://github.com/mark1foley/schedule_file_download/schedule_download.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fmark1foley%2Fschedule_file_download%2Fblob%2Fmain%2Fscheduled_download.yaml)
 
 A simple but powerful Home Assistant blueprint that automatically downloads a file from a URL every day at a time you choose — using the core [Downloader integration](https://www.home-assistant.io/integrations/downloader/).
 
